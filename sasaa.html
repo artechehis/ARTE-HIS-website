@@ -1,0 +1,90 @@
+<html>
+<title> STRUCTURES </title>
+<head>
+<header style="height: 400px">
+<center>
+<h1 style="color: #FFFFFF; font-size: 80px; font-family: Lucida Fax; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: black">
+<br>
+<br>
+  STRUCTURES 
+</h1>
+
+</center>
+<style>
+      * {
+        box-sizing: border-box;
+}
+      html, body {
+        margin: 0;
+        padding: 0;
+}
+     .column {
+     float: left; 
+     padding: 10px;
+     width: 18%;
+   }
+   .column img { 
+     opacity: 0.8;
+     cursor: pointer;
+     height: 230px;
+   }
+   .column img:hover {
+     opacity: 1;
+   }
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   .container {
+     position: relative;
+     display: none;
+   }
+   #imgtext {
+     position: absolute;
+     bottom: 15px;
+     left: 15px;
+     color: white;
+     font-size: 20px;
+   }
+   .closebtn {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     color: white;
+     font-size: 35px;
+     cursor: pointer;
+   }
+   
+</style>
+<body>
+<div class="row">
+  <div class="column"><img src="boul.jpg" alt="Boulevard" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="church.jpg" alt="Church" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="market.jpg" alt="Market" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="muni.jpg" alt="Municipal" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="plaza.jpg" alt="Plaza" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>
+</center>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = img.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</body>
+</html>

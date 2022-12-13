@@ -1,0 +1,222 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> STRUCTURES </title>
+<header style="height: 400px">
+<center>
+<h1 style="color: #FFFFFF; font-size: 80px; font-family: Lucida Fax; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: black">
+<br>
+<br>
+  STRUCTURES 
+</h1>
+
+</center>
+<style>
+header {
+   background-image:
+url('image.jpg.jpg');
+   background-size: 100% 110%;
+}
+<style/>
+<style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .nav-bar {
+        position: bottom;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+      }
+      .content {
+        margin-top: 50px;
+      }
+      .content > div {
+        padding: 15px;
+      }
+      .nav-bar a {
+        text-decoration: none;
+        color: yellow;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+     }
+     .nav-bar > ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     .nav-bar > ul > li > a {
+       background: #796244;
+     }
+     .nav-bar > ul > li > a:hover {
+       background: #4E3F21;
+       color: #FFD700;
+     }
+     .nav-bar .active {
+       background: #4E3F21 ;
+       color: #DA0037;
+     }
+     .nav-bar li {
+       float: left;
+       width: 19.9%;
+       text-align: center;
+       border-right: 1px solid #333;
+     }
+     .nav-bar li:last-child {
+       border: none;
+     }
+</style>
+<style>
+     body {
+   background-image:
+url('images.jpeg');
+   background-size: 100% 100%;
+   font-size: 25px;
+   height: 200%;
+}
+</style>
+<style>
+    button {
+     font-family: sans-serif;
+     border: none;
+     padding: 10px 20px;
+     font-size: 20px;
+     outline: none;
+     margin: 0px;
+     -webkit-transition-duration: 1s;
+     transition-duration: 1s;
+    }
+    #button1 {
+     background-color: #7e623d;
+     color: #f8f9f9;
+     box-shadow: .5px .5px 1px 2px #000000;
+    }
+    #button2 {
+     background-color: #7e623d;
+     color: #f8f9f9;
+     box-shadow: .5px .5px 1px 2px #000000;
+    }
+    #button3 {
+     background-color: #7e623d;
+     color: #f8f9f9;
+     box-shadow: .5px .5px 1px 2px #000000;
+    }
+   #button1:hover {
+    background-color: #f8f9f9;
+     color: black;
+     box-shadow: 1px 1px 2px 3px #000000;
+     cursor: pointer;
+   }
+    #button2:hover {
+    background-color: #f8f9f9;
+     color: black;
+     box-shadow: 1px 1px 2px 3px #000000;
+     cursor: pointer;
+   }
+   #button3:hover {
+    background-color: #f8f9f9;
+     color: black;
+     box-shadow: 1px 1px 2px 3px #000000;
+     cursor: pointer; 
+   }
+</style>
+
+<style>
+   img {
+    align: center;
+    width: 100px;
+     height: 120px;
+     border: 3px solid black;
+     border-radius: 5px;
+     margin-top: 0px;
+     margin-left: 60px;
+     margin-right: 20px;
+     margin-bottom: 0px;
+   }
+</style>
+<style>
+   .column {
+     float: left; 
+     padding: 10px;
+     width: 18%;
+     margin-left: 100px;
+   }
+   .column img { 
+     opacity: 0.8;
+     cursor: pointer;
+     height: 230px;
+   }
+   .column img:hover {
+     opacity: 1;
+   }
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   .container {
+     position: relative;
+     display: none;
+   }
+   #imgtext {
+     position: absolute;
+     bottom: 15px;
+     left: 15px;
+     color: white;
+     font-size: 20px;
+   }
+   .closebtn {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     color: white;
+     font-size: 35px;
+     cursor: pointer;
+   }
+   
+</style>
+</header>
+<body>
+<main>
+<a href="BARANGAYS.html"><button id="button1"> PREVIOUS </button></a>
+<a href="ArteHIS.html"><button id="button2"> HOME </button></a>
+<a href="abouttheWebsite.html"><button id="button3"> NEXT </button></a>
+<div style="text-align:center"><h2>OLD vs. NEW</h2>
+  </div>
+<center>
+<div class="row">
+  <div class="column"><img src="boul.jpg" alt="Boulevard" style="width:120%"  onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="church.jpg" alt="Church" style="width:120%" onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="market.jpg" alt="Market" style="width:120%" onclick="myFunction(this);">
+  </div>
+</center>
+<center>
+  <div class="column"><img src="muni.jpg" alt="Municipal" style="width:120%" onclick="myFunction(this);">
+  </div>
+  <div class="column"><img src="plaza.jpg" alt="Plaza" style="width:120%" onclick="myFunction(this);">
+  </div>
+</div>
+</center>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = img.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</body>
+</html>

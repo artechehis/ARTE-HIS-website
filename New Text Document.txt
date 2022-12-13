@@ -1,0 +1,62 @@
+<div class="nav-bar">
+      <ul>
+         <li><a href="" class="active"> Home </a></li>
+         <li><a href="MAYORS.html"> Mayors </a></li>
+         <li><a href="BARANGAYS.html"> Barangays </a></li>
+         <li><a href="abouttheWebsite.html"> About </a></li>
+      </ul>
+   </div>
+
+<style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .nav-bar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+      }
+      .content {
+        margin-top: 50px;
+      }
+      .content > div {
+        padding: 15px;
+      }
+      .nav-bar a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+     }
+     .nav-bar > ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     .nav-bar > ul > li > a {
+       background: lightgray;
+     }
+     .nav-bar > ul > li > a:hover {
+       background: #173459;
+       color: #f8f9f9;
+     }
+     .nav-bar .active {
+       background: #173459;
+       color: #f8f9f9;
+     }
+     .nav-bar li {
+       float: left;
+       width: 25%;
+       text-align: center;
+       border-right: 1px solid #333;
+     }
+     .nav-bar li:last-child {
+       border: none;
+     }
+</style>
